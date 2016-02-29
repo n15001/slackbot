@@ -6,6 +6,6 @@
    "生きる"
    "fuck"
    "#{msg.message.user.name}が死ね"
-		]
+	]
 msg.send _.sample words
               
