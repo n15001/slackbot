@@ -20,3 +20,7 @@ module.exports = (robot) ->
 （＿フ彡             / ←>> @#{msg.message.user.name}
 ```
   """
+module.exports = (robot) ->
+  robot.hear /ping/i, (msg) ->
+  sername = msg.message.user.name
+  msg.send "PONG", + username
