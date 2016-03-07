@@ -1,7 +1,7 @@
 module.exports = (robot) ->
-  robot.hear /hello$/i, (msg) ->
+  robot.respond /hello/i, (msg) ->
     name = #{msg.message.user.name}
     if name == "kyouya"
       msg.send "hello ^^;"
     else
-      msg.send "GTFO #{name}"
+      msg.send "GTFO"
