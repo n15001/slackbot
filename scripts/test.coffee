@@ -4,10 +4,4 @@ module.exports = (robot) ->
     if name == "kyouya"
       msg.send "hello ^^;"
     else
-      msg.send msg.random [
-		"GTFO",
-		"fuck",
-		"話しかけるな",
-		"ウザい",
-		"shine"
-	]
+      msg.send "fuck"
