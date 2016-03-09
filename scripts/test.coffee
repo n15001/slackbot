@@ -16,6 +16,5 @@ module.exports = (robot) ->
     else
       msg.send "yo!"
 
-robot.hear /(眠|ねむ)い/i, (msg) ->
-    msg.send "寝ろ"
-
+  robot.hear /(眠|ねむ)い/, (msg) ->
+      msg.send "寝ろ"
