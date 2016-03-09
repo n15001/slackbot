@@ -15,3 +15,7 @@ module.exports = (robot) ->
       msg.send msg.random yougo
     else
       msg.send "yo!"
+
+robot.hear /(眠|ねむ)い/i, (msg) ->
+    msg.send "寝ろ"
+
