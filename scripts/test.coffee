@@ -1,5 +1,5 @@
 module.exports = (robot) ->
-  robot.respond /hello/i, (msg) ->
+  robot.hear /hello/i, (msg) ->
     name = msg.message.user.name
     if name == "kyouya"
       msg.send "hello ^^;"
@@ -11,3 +11,4 @@ module.exports = (robot) ->
 	"ウザい",
 	"shine"
 	]
+/
