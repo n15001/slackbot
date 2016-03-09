@@ -5,10 +5,9 @@ module.exports = (robot) ->
       msg.send "hello ^^;"
     else
       msg.send msg.random [
-	"GTFO",
-	"fuck",
-	"話しかけるな",
-	"ウザい",
-	"shine"
+		"GTFO",
+		"fuck",
+		"話しかけるな",
+		"ウザい",
+		"shine"
 	]
-/
