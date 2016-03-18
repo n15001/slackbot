@@ -18,3 +18,13 @@ module.exports = (robot) ->
 
   robot.hear /(眠|ねむ)い/, (msg) ->
       msg.send "寝ろ"
+
+  random = (n) -> Math.floor(Math.random() * n)
+  robot.respond /(今日の運勢|運勢|おみくじ|運)/i, (msg) ->
+      fortunes = [
+        '大吉',
+        '末吉',
+        '大凶'
+      ]
+      result = fortunes[random(3)]
+      msg.send "今日の運勢: #{result}"
